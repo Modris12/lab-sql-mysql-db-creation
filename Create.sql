@@ -71,8 +71,8 @@ ALTER TABLE `Invoices`
 ADD CONSTRAINT `fk_invoice_staff_id` FOREIGN KEY (`staff_id`) REFERENCES `Salespersons` (`staff_id`) ON DELETE CASCADE;
 
 ALTER TABLE `Invoices`
-MODIFY COLUMN `invoice_nr` INT AUTO_INCREMENT;
+MODIFY COLUMN `invoice_number` INT AUTO_INCREMENT;
 
 CREATE DATABASE IF NOT EXISTS lab_mysql;
 
-USE lab_mysql;
+-- USE lab_mysql;
